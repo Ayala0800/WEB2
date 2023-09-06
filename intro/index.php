@@ -35,7 +35,7 @@
     }
     echo "</ul>";
 
-    /*objeto standar*/
+    /*objetos standar*/
 
     $coche0 = new stdClass();
     $coche0->modelo = 'F40';
