@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.autos{
+    background-color: rgb(176, 245, 119);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: .5rem;
+    border: 2px solid black;
+}
+
+.card-img{
+    height: 250px;
+}
