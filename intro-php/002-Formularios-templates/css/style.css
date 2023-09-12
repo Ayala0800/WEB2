@@ -1,0 +1,14 @@
+.navegacion{
+    display: flex;
+    background-color: rgb(53, 136, 184);
+}
+.navegacion li{
+    margin: 1rem;
+}
+li a{
+    background-color: rgb(255, 190, 143);
+}
+
+body{
+    background-color: #a5a5a5bb;
+}
