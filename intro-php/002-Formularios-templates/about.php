@@ -31,19 +31,20 @@
 
             <div class="col">
                 <?php
-                if(!empty($_GET['coche'])){
-                    $id_coche = $_GET['coche'];
-                    $auto = getCochesById($id_coche);
-                }
-                ?>
+                    // se fija si existe el parametro y en ese caso lo busca e imprime
+                    if(!empty($_GET['coche'])){
+                        $id_coche = $_GET['coche'];
+                        $auto = getCochesById($id_coche);?>
 
-                <div class="card" style="width: 18rem;">
-                <img src="<?php echo $auto->foto?>" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title"><?php echo $auto->marca ?></h4>
-                        <h5 class="card-subtitle"><?php echo $auto->modelo ?></h5>
-                        <p><?php echo $auto->potencia?></p>
-                </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="<?php echo $auto->foto?>" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title"><?php echo $auto->marca ?></h4>
+                                <h5 class="card-subtitle"><?php echo $auto->modelo ?></h5>
+                                <p><?php echo $auto->potencia?></p>
+                            </div>
+                        </div>
+                <?php } ?>
             </div>
         </div>
     </main>
