@@ -4,4 +4,4 @@
                 <li><a href="about.php">About</a></li>
             </ul>
         </nav>
-    </header>
+</header>

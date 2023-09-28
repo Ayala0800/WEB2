@@ -1,0 +1,27 @@
+<?php
+//el router va a leer la action desde el parametro "action"
+
+echo 'router';
+
+require_once 'coches.php';
+require_once 'db_coches.php';
+if(isset($_GET['action'])){
+    $action = $_GET['action'];
+}else{
+    $action = 'home'; //accion x defecto sino manda ninguna
+}
+
+$params = explode('/', $action);
+
+
+switch ($params[0]){
+    case 'home':
+        showCoches(null);
+        break;
+    case 'coche':
+        showCocheById($params[1]);
+        break;
+    default:
+        echo "NOT FOUND 404";
+    break;
+}
